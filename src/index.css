@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GE SS Two Medium";
+  src: url("/fonts/GE_SS_Two_Medium.otf") format("truetype");
+}
+
+/* Use it anywhere */
+body {
+  font-family: "GE SS Two Medium", sans-serif;
+}
