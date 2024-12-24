@@ -2,9 +2,9 @@ import Container from "./Container";
 import desktopHeroImg from "../assets/images/image-hero.png";
 export default function Hero() {
   return (
-    <section>
-      <Container className="md:flex items-center gap-[6.625rem] pe-0  pt-8 ">
-        <div>
+    <sectionn className="">
+      <Container className="md:flex items-center bg-[#F2F6F7] gap-[6.625rem] pe-0 justify-between mb-[6.25rem]   ">
+        <div className="flex-grow">
           <h1 className="text-7xl leading-[5.625rem]">
             شريكك الموثوق في التميز العقاري
           </h1>
@@ -16,6 +16,6 @@ export default function Hero() {
         </div>
         <img src={desktopHeroImg} alt="heroImage" />
       </Container>
-    </section>
+    </sectionn>
   );
 }
