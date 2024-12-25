@@ -17,7 +17,7 @@ export default function Header() {
           <img src={logo} alt="site logo" />
         </a>
         <nav>
-          <ul className="hidden md:flex gap-10  ">
+          <ul className="hidden md:flex gap-10   ">
             {links.map((link, index) => {
               const { name, path } = link;
               return (

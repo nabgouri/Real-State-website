@@ -11,3 +11,11 @@
 body {
   font-family: "GE SS Two Medium", sans-serif;
 }
+
+.card-item > li:nth-child(2) {
+  border-inline: 1px solid #a6a6a6;
+  padding-inline: 6.25rem;
+}
+.card-item > li > img {
+  margin-bottom: 2rem;
+}
