@@ -1,7 +1,7 @@
 import Container from "./Container";
 import TextContent from "./TextContent";
 import UlCard from "./UlCard";
-import { servirses } from "../util/CadsArrays";
+import { servirses } from "../util/cadsArrays";
 export default function Servirses() {
   return (
     <section className=" text-center">
