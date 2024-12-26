@@ -9,7 +9,7 @@ export default function Licenses() {
         <TextContent title="تراخيصنا" headline="معتمد وموثوق به"></TextContent>
         <UlCard
           cards={companies}
-          className="flex  items-center mt-6  ps-[4rem]  gap-[6.25rem] card-item "
+          className="flex  items-center mt-6    gap-[6.25rem] card-item "
         ></UlCard>
       </Container>
     </section>
