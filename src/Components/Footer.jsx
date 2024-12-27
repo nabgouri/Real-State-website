@@ -2,7 +2,7 @@ import Container from "./Container";
 import FooterNav from "./FooterNav";
 import H3 from "./H3";
 // hi
-import footerLogo from "../assets/logo-footer.png";
+import footerLogo from "../assets/Logo-footer.png";
 export default function Footer() {
   return (
     <footer className="bg-[#181717]">
