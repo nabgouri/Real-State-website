@@ -1,6 +1,7 @@
 import Container from "./Container";
 import FooterNav from "./FooterNav";
 import H3 from "./H3";
+// hi
 import footerLogo from "../assets/logo-footer.png";
 export default function Footer() {
   return (
