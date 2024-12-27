@@ -4,13 +4,13 @@ import H3 from "./H3";
 import footerLogo from "../assets/logo-footer.png";
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-[#181717]">
       <Container className=" pt-[6.25rem] gap-[7.75rem] bg-[#181717] text-white flex">
         <div>
           <a href="#">
             <img src={footerLogo} alt="footer logo " />
           </a>
-          <p>
+          <p className="mt-10 mb-[3.125rem] leading-[1.875rem]">
             حيث لا نكتفي بتقديم الخدمات فحسب، بل نقدم حلولاً كاملة لجميع
             احتياجاتك العقارية. سواء كنت تبحث عن تطوير أو إدارة أو تسويق
             العقارات، فنحن وجهتك الوحيدة.
@@ -20,6 +20,10 @@ export default function Footer() {
         </div>
         <FooterNav></FooterNav>
       </Container>
+      <p className="text-center border-t-[0.8px] border-t-[#2B2828]  text-white py-[1.125rem] mt-24">
+        حقوق النشر 2024 سمة العقارية خاضعة لرقابة واشراف الهيئة العامة للعقار
+        جميع الحقوق محفوظة
+      </p>
     </footer>
   );
 }
