@@ -4,7 +4,7 @@ export default function ContactGrid({ info }) {
 
   return (
     <li>
-      <H3>{title}</H3>
+      <H3 className="opacity-90">{title}</H3>
       {descreption ? (
         <p className="font-medium leading-[1.875rem] text-[1.375rem] opacity-90 text-[#181717]">
           {descreption}

@@ -5,15 +5,15 @@ export default function FooterNav() {
   return (
     <ul className="grid grid-cols-3 ">
       <li>
-        <H3 className="text-white">شركة</H3>
+        <H3 className="text-white after:bg-white">شركة</H3>
         <NavList links={homeLinks} className="  md:block"></NavList>
       </li>
       <li>
-        <H3 className=" text-white">دعم</H3>
+        <H3 className=" text-white after:bg-white">دعم</H3>
         <NavList links={supportLinks} className="  md:block"></NavList>
       </li>
       <li>
-        <H3 className=" text-white">يشترك</H3>
+        <H3 className=" text-white after:bg-white">يشترك</H3>
         <p>
           ابق على اطلاع بأحدث أخبار شركة سمة العقارية. تظل معلوماتك خاصة، وسوف
           نقوم بإلغاء اشتراكك عند الطلب.

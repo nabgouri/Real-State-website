@@ -15,7 +15,7 @@ export default function Footer() {
             احتياجاتك العقارية. سواء كنت تبحث عن تطوير أو إدارة أو تسويق
             العقارات، فنحن وجهتك الوحيدة.
           </p>
-          <H3 className="text-white">رخصة</H3>
+          <H3 className="text-white after:bg-white">رخصة</H3>
           <p>رخصة : 101010101</p>
         </div>
         <FooterNav></FooterNav>
