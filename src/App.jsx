@@ -4,6 +4,8 @@ import CustomerSection from "./Components/CustomerSection";
 import About from "./Components/About";
 import Licenses from "./Components/Licenses";
 import Servirses from "./Components/Servirses";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
       <About></About>
       <Licenses></Licenses>
       <Servirses></Servirses>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 }

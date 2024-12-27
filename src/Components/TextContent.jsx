@@ -3,9 +3,9 @@ import { twMerge } from "tailwind-merge";
 export default function TextContent({ headline, paragraph, title, className }) {
   return (
     <div className={(twMerge(" "), className)}>
-      <span className="text-[1.375rem] font-medium opacity-90 leading-[1.875rem] mb-[0.625rem]">
+      <div className="text-[1.375rem] font-medium opacity-90 leading-[1.875rem] mb-[0.625rem]">
         {title}
-      </span>
+      </div>
       <h2 className="text-6xl font-medium leading-[4.375rem] mb-5 ">
         <Balancer>{headline}</Balancer>
       </h2>

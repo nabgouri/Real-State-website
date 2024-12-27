@@ -1,15 +1,8 @@
-import Link from "./Link";
 import logo from "../assets/simah 1.png";
 import Container from "./Container";
+import NavList from "./NavList";
+import { homeLinks } from "../util/infosArrays";
 export default function Header() {
-  const links = [
-    { name: "بيت", path: "#" },
-    { name: "معلومات عنا", path: "#" },
-    { name: "خدمات", path: "#" },
-    { name: "التراخيص", path: "#" },
-    { name: "اتصل بنا", path: "#" },
-  ];
-
   return (
     <header>
       <Container className="flex justify-between py-8 items-center">
@@ -17,16 +10,7 @@ export default function Header() {
           <img src={logo} alt="site logo" />
         </a>
         <nav>
-          <ul className="hidden md:flex gap-10   ">
-            {links.map((link, index) => {
-              const { name, path } = link;
-              return (
-                <li key={index}>
-                  <Link path={path}>{name}</Link>
-                </li>
-              );
-            })}
-          </ul>
+          <NavList links={homeLinks}></NavList>
         </nav>
         <button className="bg-black text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
           إضافة قائمة
