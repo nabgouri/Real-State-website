@@ -35,3 +35,30 @@ body {
   padding-inline: 3.4rem;
   border-radius: 10px;
 }
+
+.before-class::before {
+  content: "";
+  background-image: url("src/assets/images/plus-dots 1.png");
+  background-size: contain; /* or specific dimensions */
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 182px; /* specify actual dimensions needed */
+  height: 63px;
+  z-index: 5;
+  left: 6%;
+  top: 5%;
+}
+.after-class::after {
+  content: "";
+  background-image: url("src/assets/images/plus-dots 1.png");
+  background-size: contain; /* or specific dimensions */
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 182px; /* specify actual dimensions needed */
+  height: 63px;
+  bottom: -10%;
+  right: -5%;
+  z-index: 5;
+}
