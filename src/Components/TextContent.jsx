@@ -9,8 +9,8 @@ export default function TextContent({ headline, paragraph, title, className }) {
       <h2 className="text-6xl font-medium leading-[4.375rem] mb-5 ">
         <Balancer>{headline}</Balancer>
       </h2>
-      <p className="text-lg font-medium leading-[1.875rem] opacity-80 ">
-        {paragraph}
+      <p className="text-lg font-medium  leading-[1.875rem] opacity-80 ">
+        <Balancer>{paragraph}</Balancer>
       </p>
     </div>
   );
