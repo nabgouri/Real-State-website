@@ -3,14 +3,22 @@ import { homeLinks, supportLinks } from "../util/infosArrays";
 import H3 from "./H3";
 export default function FooterNav() {
   return (
-    <ul className="grid grid-cols-3 ">
+    <ul className="grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1 ">
       <li>
         <H3 className="text-white after:bg-white after:mb-9">شركة</H3>
-        <NavList links={homeLinks} className="  flex-col"></NavList>
+        <NavList
+          links={homeLinks}
+          linkClassName="text-white opacity-100"
+          className=" flex-col  flex gap-4"
+        ></NavList>
       </li>
       <li>
         <H3 className=" text-white after:bg-white after:mb-9">دعم</H3>
-        <NavList links={supportLinks} className=" flex-col"></NavList>
+        <NavList
+          links={supportLinks}
+          linkClassName="text-white opacity-100 "
+          className=" flex-col flex gap-4"
+        ></NavList>
       </li>
       <li>
         <H3 className=" text-white after:bg-white after:mb-9">يشترك</H3>

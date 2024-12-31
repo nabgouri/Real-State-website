@@ -5,14 +5,14 @@ import { servirses } from "../util/cadsArrays";
 export default function Servirses() {
   return (
     <section className=" text-center">
-      <Container className="bg-[#F2F6F7] py-[7.5rem] ">
+      <Container className="bg-[#F2F6F7] py-[3.125rem] md:py-[7.5rem] ">
         <TextContent
           title="خدماتنا"
           headline="احتياجاتك العقارية"
         ></TextContent>
         <UlCard
           cards={servirses}
-          className="grid grid-cols-3 items-center gap-5  card-container pt-10"
+          className="grid grid-cols-3 overflow-hidden md:overflow-auto  md:items-center md:gap-5  card-container pt-0 md:pt-10"
         ></UlCard>
       </Container>
     </section>

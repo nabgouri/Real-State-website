@@ -12,9 +12,17 @@ body {
   font-family: "GE SS Two Medium", sans-serif;
 }
 
-.card-item > li:nth-child(2) {
-  border-inline: 1px solid #a6a6a6;
-  padding-inline: 6.25rem;
+@media (max-width: 768px) {
+  .card-item > li:nth-child(2) {
+    border-block: 1px solid #a6a6a6;
+    padding-block: 3.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .card-item > li:nth-child(2) {
+    border-inline: 1px solid #a6a6a6;
+    padding-inline: 6.25rem;
+  }
 }
 .card-item > li > img {
   margin-bottom: 2rem;
@@ -35,7 +43,15 @@ body {
   padding-inline: 3.4rem;
   border-radius: 10px;
 }
-
+@media (max-width: 768px) {
+  .card-container > li {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+  .card-container > li:first-child {
+    z-index: 20;
+  }
+}
 .before-class::before {
   content: "";
   background-image: url("src/assets/images/plus-dots 1.png");
@@ -46,8 +62,8 @@ body {
   width: 182px; /* specify actual dimensions needed */
   height: 63px;
   z-index: 5;
-  left: 6%;
-  top: 5%;
+  left: 22%;
+  top: 8%;
 }
 .after-class::after {
   content: "";
@@ -58,7 +74,22 @@ body {
   position: absolute;
   width: 182px; /* specify actual dimensions needed */
   height: 63px;
-  bottom: -10%;
-  right: -5%;
+  bottom: 4%;
+  right: -4%;
   z-index: 5;
+}
+@media (max-width: 768px) {
+  .before-class::before {
+    height: 44px;
+    width: 128px;
+    left: 27px;
+    bottom: 0px;
+    top: 10px;
+  }
+  .after-class::after {
+    height: 44px;
+    width: 128px;
+    right: -34px;
+    bottom: 10px;
+  }
 }

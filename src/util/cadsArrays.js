@@ -18,8 +18,8 @@
  
  export const customersLogo = [{logo: gumroad}, {logo: asana},  {logo: github}, {logo: hubspot}, {logo: stripe}, {logo: adobe}]
  export const companies = [{title: 'رخصة فال للتسويق العقاري', img: falImage },{title: 'منصة اجار', img: ejar },{title: 'الهيئة العامة للعقار', img: rega}] 
- export const servirses = [{headline: 'احتياجاتك العقارية', paragraph: 'استثمار في المستقبل! حلول مبتكرة مشاريع متميزة ترتقي بأسلوب الحياة وتحقق عوائد استثنائية.', logoImage: firstImage , },
+ export const servirses = [{headline: 'التطوير العقاري', paragraph: 'استثمار في المستقبل! حلول مبتكرة مشاريع متميزة ترتقي بأسلوب الحياة وتحقق عوائد استثنائية.', logoImage: firstImage , },
      {headline:'إدارة الممتلكات', paragraph: 'إدارة الممتلكات باحترافية عالية! حلول شاملة تضمن الحفاظ على قيمتك الاستثمارية وتعزز راحتك.', logoImage: secondImage, }, 
-     {headline:'تسويق العقارات', paragraph: 'تسويق العقارات بفن وإبداع! استراتيجيات مبتكرة للوصول إلى العملاء المناسبين وتحقيق أفضل العوائد.', logoImage: thirdImage, },
+     {headline:'تسويق  العقارات', paragraph: 'تسويق العقارات بفن وإبداع! استراتيجيات مبتكرة للوصول إلى العملاء المناسبين وتحقيق أفضل العوائد.', logoImage: thirdImage, },
     
      ]

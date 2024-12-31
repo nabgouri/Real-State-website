@@ -6,7 +6,7 @@ import footerLogo from "../assets/Logo-footer.png";
 export default function Footer() {
   return (
     <footer className="bg-[#181717]">
-      <Container className=" pt-[6.25rem] gap-[7.75rem] bg-[#181717] text-white flex">
+      <Container className=" pt-[3.125rem] md:pt-[6.25rem]  gap-[7.75rem] bg-[#181717] text-white md:flex">
         <div>
           <a href="#">
             <img src={footerLogo} alt="footer logo " />
@@ -17,11 +17,11 @@ export default function Footer() {
             العقارات، فنحن وجهتك الوحيدة.
           </p>
           <H3 className="text-white after:bg-white">رخصة</H3>
-          <p>رخصة : 101010101</p>
+          <p className="mb-[3.125rem] md:mb-0">رخصة : 101010101</p>
         </div>
         <FooterNav></FooterNav>
       </Container>
-      <p className="text-center border-t-[0.8px] border-t-[#2B2828]  text-white py-[1.125rem] mt-24">
+      <p className="text-center px-3 border-t-[0.8px] border-t-[#2B2828]  text-white py-[1.125rem] mt-24">
         حقوق النشر 2024 سمة العقارية خاضعة لرقابة واشراف الهيئة العامة للعقار
         جميع الحقوق محفوظة
       </p>
