@@ -100,3 +100,12 @@ body {
   width: 100% !important;
   height: 30% !important;
 }
+@media (max-width: 600px) {
+  .logo-animation {
+    width: 35%;
+  }
+  .logo-animation > svg {
+    width: 100% !important;
+    height: 30% !important;
+  }
+}
