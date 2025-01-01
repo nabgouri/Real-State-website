@@ -93,3 +93,10 @@ body {
     bottom: 10px;
   }
 }
+.logo-animation {
+  width: 15%;
+}
+.logo-animation > svg {
+  width: 100% !important;
+  height: 30% !important;
+}

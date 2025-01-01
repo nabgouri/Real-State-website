@@ -7,7 +7,7 @@ import mobileBottomImage from "../assets/images/about-images/mobile-bottom-about
 
 export default function About() {
   return (
-    <section>
+    <section id="about">
       <Container className="md:flex items-center justify-between bg-[#F2F6F7] py-[3.125rem] md:py-[7.5rem]">
         <div className="flex-1 relative">
           <div className="grid grid-cols-1 grid-rows-1 after-class before-class ">

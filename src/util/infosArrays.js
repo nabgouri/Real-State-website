@@ -8,7 +8,7 @@ export const homeLinks = [
     { name: "بيت", path: "home" },
     { name: "معلومات عنا", path: "about" },
     { name: "خدمات", path: "service" },
-    { name: "التراخيص", path: "license" },
+    { name: "التراخيص", path: "lisence" },
     { name: "اتصل بنا", path: "contact" },
   ];
   export const supportLinks = [

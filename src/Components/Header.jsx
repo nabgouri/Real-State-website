@@ -1,21 +1,33 @@
-import logo from "../assets/simah 1.png";
+// import logo from "../assets/simah 1.svg";
 import Container from "./Container";
 import NavList from "./NavList";
 import { homeLinks } from "../util/infosArrays";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import NavModal from "./NavModal";
+import LogoAnimation from "./LogoAnimation";
 export default function Header() {
+  // const [isSplashComplete, setisSplashComplete] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const openNavHandler = () => {
     setIsOpen(!isOpen);
   };
+  // const handleIsSplashComplete = () => {
+  //   setisSplashComplete(!isSplashComplete);
+  // };
   return (
     <header>
       <Container className="flex justify-between py-5 items-center">
-        <a href="/">
-          <img src={logo} alt="site logo" />
-        </a>
+        <LogoAnimation></LogoAnimation>
+        {/* {isSplashComplete ? (
+          <a href="#">
+            <img src={logo} alt="site logo" />
+          </a>
+        ) : (
+          <SplashScreen
+            onAnimationComplete={handleIsSplashComplete}
+          ></SplashScreen>
+        )} */}
         <nav>
           <NavList links={homeLinks}></NavList>
           <svg

@@ -4,7 +4,10 @@ import { companies } from "../util/cadsArrays";
 import Container from "./Container";
 export default function Licenses() {
   return (
-    <section className="text-center my-[3.125rem] md:my-[6.25rem] ">
+    <section
+      id="lisence"
+      className="text-center my-[3.125rem] md:my-[6.25rem] "
+    >
       <Container className=" md:flex flex-col   items-center justify-center">
         <TextContent title="تراخيصنا" headline="معتمد وموثوق به"></TextContent>
         <UlCard

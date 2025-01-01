@@ -4,7 +4,7 @@ import Ulinfo from "./UlInfo";
 import { contactInfo } from "../util/infosArrays";
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <Container className="md:flex  md:gap-[12.5rem] md:items-center py-[3.125rem] md:py-[6.25rem] bg-[#F2F6F7]  ">
         <TextContent
           className="md:w-[73%]"
