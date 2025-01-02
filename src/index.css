@@ -109,3 +109,6 @@ body {
     height: 30% !important;
   }
 }
+.cards-logo > li {
+  flex-shrink: 0;
+}
