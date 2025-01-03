@@ -13,7 +13,7 @@ export default function Contact() {
         ></TextContent>
         <Ulinfo
           infos={contactInfo}
-          className="  md:grid md:grid-cols-2 md:gap-x-[5.375rem] gap-y-10  md:gap-y-[3.75rem]"
+          className="  md:grid  md:grid-cols-2 md:gap-x-[5.375rem] gap-y-10  md:gap-y-[3.75rem]"
         ></Ulinfo>
       </Container>
     </section>

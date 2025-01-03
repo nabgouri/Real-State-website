@@ -89,7 +89,7 @@ export default function Header() {
             ></NavModal>
           )}
         </nav>
-        <button className="md:block hidden bg-black text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
+        <button className="md:block hidden bg-black active:scale-110 hover:bg-[#60636D]  text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
           إضافة قائمة
         </button>
       </Container>

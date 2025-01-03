@@ -31,7 +31,7 @@ export default function FooterNav() {
           placeholder="عنوان بريدك الكتروني"
           className="bg-[#262424] rounded-[60px]  ps-5 mt-5 mb-3 py-4 pe-[7.5rem]  placeholder:font-medium placeholder:opacity-15 placeholder:text-[0.9375rem] placeholder:leading-[1.25rem]"
         />
-        <button className="bg-black text-white rounded-[60px] py-4 px-[3.25rem] text-lg leading-[1.25rem] ">
+        <button className="bg-black hover:bg-[#60636D] active:scale-110 text-white rounded-[60px] py-4 px-[3.25rem] text-lg leading-[1.25rem] ">
           اشتراك
         </button>
       </li>
