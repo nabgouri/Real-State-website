@@ -112,3 +112,12 @@ body {
 .cards-logo > li {
   flex-shrink: 0;
 }
+.fade-inOut {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5rem,
+    black calc(100% - 5rem),
+    transparent
+  );
+}

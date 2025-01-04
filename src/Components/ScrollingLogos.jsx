@@ -3,7 +3,7 @@ import { customersLogo } from "../util/cadsArrays";
 import UlCard from "./UlCard";
 const ScrollingLogos = () => {
   return (
-    <section className="bg-white ">
+    <section className="fade-inOut ">
       <div className="flex  overflow-hidden">
         <TranslateWrapper>
           <LogoItems />

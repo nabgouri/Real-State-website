@@ -5,8 +5,8 @@ import ScrollingLogos from "./ScrollingLogos";
 
 export default function CustomerSection() {
   return (
-    <section className="mb-10 md:mb-[6.25rem]">
-      <Container className="md:px-[10.375rem] flex flex-col items-center overflow-clip">
+    <section className="mb-10 md:mb-[6.25rem] overfow-hidden">
+      <Container initial={{y:'50%', opactiy:0, }} whileInView={{y: '0%', opactiy:0,}} transition={{duration: 0.3,  ease: 'easeInOut',  }} viewport={{once:true, margin: '-200px 0px'}} className="md:px-[10.375rem] flex flex-col items-center overflow-clip">
         <TextContent
           className="text-center md:px-[9.75rem]"
           title="عملائنا"

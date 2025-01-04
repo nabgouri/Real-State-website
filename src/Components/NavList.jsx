@@ -1,8 +1,9 @@
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
-export default function NavList({ links, className, linkClassName }) {
+import { motion } from "framer-motion";
+export default function NavList({ links, className, linkClassName, ...spread }) {
   return (
-    <ul className={twMerge("hidden md:flex md:gap-10", className)}>
+    <motion.ul {...spread} className={twMerge("hidden md:flex md:gap-10", className)}>
       {links.map((link, index) => {
         const { name, path } = link;
         return (
@@ -13,6 +14,6 @@ export default function NavList({ links, className, linkClassName }) {
           </li>
         );
       })}
-    </ul>
+    </motion.ul>
   );
 }

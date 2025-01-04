@@ -1,8 +1,10 @@
 import { twMerge } from "tailwind-merge";
-export default function Container({ children, className }) {
+import { motion } from "framer-motion";
+
+export default function Container({ children, className, ...spread }) {
   return (
-    <div className={twMerge(" px-5  md:px-[3.8525rem] ", className)}>
+    <motion.div {...spread} className={twMerge(" px-5  overflow-hidden md:px-[3.8525rem] ", className)}>
       {children}
-    </div>
+    </motion.div>
   );
 }

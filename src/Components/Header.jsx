@@ -29,7 +29,7 @@ export default function Header() {
           ></SplashScreen>
         )} */}
         <nav>
-          <NavList links={homeLinks}></NavList>
+          <NavList initial={{scale:1.5, opacity:0, z: 100}} whileInView={{scale:1, opacity:1, z:0}} viewport={{once: true}} transition={{duration: 0.4, delay: 0.2, ease: 'easeInOut'}} links={homeLinks}></NavList>
           <svg
             onClick={openNavHandler}
             className="md:hidden"
@@ -89,9 +89,9 @@ export default function Header() {
             ></NavModal>
           )}
         </nav>
-        <button className="md:block hidden bg-black active:scale-110 hover:bg-[#60636D]  text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
+        <motion.button initial={{x: -100, opacity:0}} whileInView={{x:0, opacity: 1}} transition={{duration: 0.4, delay:0.2, ease: 'easeInOut', }} viewport={{once: true}} className="md:block hidden bg-black active:scale-110 hover:bg-[#60636D]  text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
           إضافة قائمة
-        </button>
+        </motion.button>
       </Container>
     </header>
   );
