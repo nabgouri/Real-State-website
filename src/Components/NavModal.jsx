@@ -22,7 +22,7 @@ const NavModal = function NavModal({ openNavHandler, ...spread }) {
           return (
             <li key={index}>
               <Link
-                path={`#${path}`}
+                path={`${path}`}
                 className="text-[2rem] font-bold leading-10 text-[1b1d23]"
                 onClick={openNavHandler}
               >

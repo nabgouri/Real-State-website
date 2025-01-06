@@ -5,8 +5,19 @@ import H3 from "./H3";
 import footerLogo from "../assets/Logo-footer.png";
 export default function Footer() {
   return (
-    <footer className="bg-[#181717]">
-      <Container className=" pt-[3.125rem] md:pt-[6.25rem]  gap-[7.75rem] bg-[#181717] text-white md:flex">
+    <footer className="bg-[#181717] overflow-hidden">
+      <Container
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.3,
+          ease: "easeInOut",
+          stiffness: 50,
+        }}
+        viewport={{ once: true, amount: 0.4 }}
+        className=" pt-[3.125rem] md:pt-[6.25rem]  gap-[7.75rem] bg-[#181717] text-white md:flex"
+      >
         <div>
           <a href="#">
             <img src={footerLogo} alt="footer logo " />

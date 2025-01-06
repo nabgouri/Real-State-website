@@ -7,29 +7,22 @@ import { motion } from "framer-motion";
 import NavModal from "./NavModal";
 import LogoAnimation from "./LogoAnimation";
 export default function Header() {
-  // const [isSplashComplete, setisSplashComplete] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const openNavHandler = () => {
     setIsOpen(!isOpen);
   };
-  // const handleIsSplashComplete = () => {
-  //   setisSplashComplete(!isSplashComplete);
-  // };
   return (
     <header>
       <Container className="flex justify-between py-5 items-center">
         <LogoAnimation></LogoAnimation>
-        {/* {isSplashComplete ? (
-          <a href="#">
-            <img src={logo} alt="site logo" />
-          </a>
-        ) : (
-          <SplashScreen
-            onAnimationComplete={handleIsSplashComplete}
-          ></SplashScreen>
-        )} */}
         <nav>
-          <NavList initial={{scale:1.5, opacity:0, z: 100}} whileInView={{scale:1, opacity:1, z:0}} viewport={{once: true}} transition={{duration: 0.4, delay: 0.2, ease: 'easeInOut'}} links={homeLinks}></NavList>
+          <NavList
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            links={homeLinks}
+          ></NavList>
           <svg
             onClick={openNavHandler}
             className="md:hidden"
@@ -89,9 +82,15 @@ export default function Header() {
             ></NavModal>
           )}
         </nav>
-        <motion.button initial={{x: -100, opacity:0}} whileInView={{x:0, opacity: 1}} transition={{duration: 0.4, delay:0.2, ease: 'easeInOut', }} viewport={{once: true}} className="md:block hidden bg-black active:scale-110 hover:bg-[#60636D]  text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5">
+        {/* <motion.button
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.2, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="md:block hidden bg-black active:scale-110 hover:bg-[#60636D]  text-white px-8 py-[1.125rem] rounded-xl text-lg leading-5"
+        >
           إضافة قائمة
-        </motion.button>
+        </motion.button> */}
       </Container>
     </header>
   );

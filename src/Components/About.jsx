@@ -18,8 +18,8 @@ export default function About() {
               <motion.img
                 initial={{z:-100, opactiy:0, rotate: '45deg', scale: 0.5}} 
                 whileInView={{z:0, opactiy:1, rotate: '0deg', scale:1 }} 
-                transition={{duration: 0.4, delay: 0.4, ease: 'easeIn', mass: 0.5}}
-                viewport={{once:true, margin: '200px'}}
+                transition={{duration: 0.4, delay: 0.2, ease: 'easeIn', mass: 0.5}}
+                viewport={{once:true, amount: 0.3}}
                 src={aboutBottomImage}
                 alt="about-bottom-image"
                 className="mr-[7rem] md:mr-[10.325rem] mt-[4.025rem]  md:mt-[6.125rem]  "
@@ -31,8 +31,8 @@ export default function About() {
               <source media="(min-width: 601px)" srcSet={aboutTopImage} />
               <motion.img initial={{x:100, opactiy:0,}} 
                     whileInView={{x:0, opactiy:1, }} 
-                    transition={{duration: 0.4, delay: 0.4, ease: 'easeOut', mass: 0.5}}
-                    viewport={{once:true, margin: '200px'}} src={aboutTopImage} alt="about-top-image" className="" />
+                    transition={{duration: 0.4, delay: 0.2, ease: 'easeOut', mass: 0.5}}
+                    viewport={{once:true, amount: 0.3}} src={aboutTopImage} alt="about-top-image" className="" />
             </picture>
           </div>
         </div>
@@ -41,8 +41,8 @@ export default function About() {
           title="معلومات عنا"
           initial={{x:-100, opactiy:0, filter:'Blur(12px)'}} 
           whileInView={{x:0, opactiy:1, filter:'Blur(0px)'}} 
-          transition={{duration: 0.4, delay: 0.4, ease: 'easeInOut', mass: 0.5}}
-          viewport={{once:true, margin: '200px'}}
+          transition={{duration: 0.4, delay: 0.2, ease: 'easeInOut', mass: 0.5}}
+          viewport={{once:true, amount: 0.3}}
           className="text-center mt-[3.125rem] md:mt-0 md:text-start flex-1 "
           headline="إنشاء مساحات المعيشة التي تحلم بها"
           paragraph="نحن متخصصون في تقديم حلول عقارية شاملة، بما في ذلك التطوير وإدارة الممتلكات والتسويق وعقود الإيجار والمزادات. مع سنوات من الخبرة في الصناعة، نحن ملتزمون بتقديم خدمة استثنائية مصممة خصيصًا لتلبية احتياجات أصحاب العقارات والمستثمرين والمستأجرين."

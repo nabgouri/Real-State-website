@@ -1,8 +1,24 @@
+import { motion } from "framer-motion";
+
 export default function Card({ card }) {
-  const { logo, logoImage, title, img, paragraph, headline } = card;
+  const {
+    logo,
+    logoImage,
+    title,
+    img,
+    paragraph,
+    headline,
+    variants,
+    viewport,
+  } = card;
   return (
-    <li>
-      {card.logo && <img src={logo} alt="" />}
+    <motion.li
+      variants={variants}
+      viewport={viewport}
+      initial="initial"
+      whileInView="whileInView"
+    >
+      {card.logo && <img src={logo} alt="logo-test" />}
       {card.title && (
         <>
           <img src={img} alt="image" />
@@ -42,6 +58,6 @@ export default function Card({ card }) {
           </a>
         </>
       )}
-    </li>
+    </motion.li>
   );
 }

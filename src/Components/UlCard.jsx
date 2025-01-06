@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import Card from "./Card";
 import { motion } from "framer-motion";
-export default function UlCard({ cards, className, ...spread }) {
+export default function UlCard({ cards, className, animation, ...spread }) {
   return (
     <motion.ul
       {...spread}
@@ -9,7 +9,7 @@ export default function UlCard({ cards, className, ...spread }) {
       className={twMerge("md:flex", className)}
     >
       {cards.map((card, index) => {
-        return <Card key={index} card={card}></Card>;
+        return <Card animation={animation} key={index} card={card}></Card>;
       })}
     </motion.ul>
   );
