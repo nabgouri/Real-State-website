@@ -11,26 +11,57 @@ export default function Hero() {
         <motion.div
           dir="rtl"
           className="flex-grow text-center order-2 md:text-start px-[2.25rem] md:px-0"
-          initial={{x: 100, opactiy:0, filter: 'Blur(12px)'}}
-          whileInView={{x:0, opactiy:1, filter: 'Blur(0px)'}}
-          transition={{duration:0.5, delay: 0.2, ease: 'easeInOut' }}
-          viewport={{once: true}}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, x: 100, filter: "blur(12px)" },
+            visible: {
+              opacity: 1,
+              x: 0,
+              filter: "blur(0px)",
+              transition: {
+                duration: 0.8,
+                ease: [0.6, -0.05, 0.01, 0.99],
+                staggerChildren: 0.3,
+              },
+            },
+          }}
+          viewport={{ once: true }}
         >
-          <h1 className="md:text-7xl text-[3.125rem] font-medium leading-[4.375rem] md:leading-[5.625rem]">
+          <motion.h1
+            className="md:text-7xl text-[3.125rem] font-medium leading-[4.375rem] md:leading-[5.625rem]"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             شريكك الموثوق في التميز العقاري
-          </h1>
-          <p className="md:text-lg text-base leading-[1.625rem] font-medium md:leading-[1.9rem] pt-5 md:pt-7">
+          </motion.h1>
+          <motion.p
+            className="md:text-lg text-base leading-[1.625rem] font-medium md:leading-[1.9rem] pt-5 md:pt-7"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             حيث لا نكتفي بتقديم الخدمات فحسب، بل نقدم حلولاً كاملة لجميع
             احتياجاتك العقارية. سواء كنت تبحث عن تطوير أو إدارة أو تسويق
             العقارات، فنحن وجهتك الوحيدة.
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Image Section */}
-        <motion.div initial={{x: -100, opactiy:0, }}
-          whileInView={{x:0, opactiy:1, }}
-          transition={{duration:0.5, delay: 0.2, ease: 'easeInOut' }}
-          viewport={{once: true}} className="flex-shrink-0 order-1 md:order-3">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2,
+            ease: [0.6, -0.05, 0.01, 0.99],
+          }}
+          viewport={{ once: true }}
+          className="flex-shrink-0 order-1 md:order-3"
+        >
           <picture>
             <source
               media="(min-width: 768px)"

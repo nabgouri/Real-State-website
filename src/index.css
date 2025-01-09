@@ -120,4 +120,11 @@ body {
     black calc(100% - 5rem),
     transparent
   );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5rem,
+    black calc(100% - 5rem),
+    transparent
+  );
 }
