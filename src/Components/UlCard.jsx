@@ -1,35 +1,60 @@
 import { twMerge } from "tailwind-merge";
 import Card from "./Card";
 import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function UlCard({
   cards,
   className,
   animation,
-  // New carousel-specific props
   isCarousel = false,
   currentIndex = 0,
   ...spread
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
   const renderCarouselItem = (card, index) => (
-    <motion.li
+    <Card
       key={index}
-      animate={{
-        opacity: index === currentIndex ? 1 : 0,
-        zIndex: index === currentIndex ? 20 : 10,
-        transition: {
-          opacity: { duration: 0.3 },
-          zIndex: { delay: index === currentIndex ? 0 : 0.3 },
+      card={{
+        ...card,
+        variants: {
+          ...card.variants,
+          initial: {
+            ...card.variants.initial,
+            display: isMobile
+              ? index === currentIndex
+                ? "flex"
+                : "none"
+              : "flex",
+          },
+          whileInView: {
+            ...card.variants.whileInView,
+            display: isMobile
+              ? index === currentIndex
+                ? "flex"
+                : "none"
+              : "flex",
+            transition: {
+              ...card.variants.whileInView.transition,
+              display: { duration: 0 },
+            },
+          },
         },
       }}
-    >
-      <Card animation={animation} card={card} />
-    </motion.li>
+    />
   );
 
-  const renderRegularItem = (card, index) => (
-    <Card key={index} animation={animation} card={card} />
-  );
+  const renderRegularItem = (card, index) => <Card key={index} card={card} />;
 
   return (
     <motion.ul {...spread} className={twMerge("md:flex", className)}>
