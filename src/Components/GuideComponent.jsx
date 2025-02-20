@@ -33,7 +33,7 @@ export default function GuideComponent() {
         src={video}
         className="w-full "
       ></video>
-      <Container className="mx-5 md:mx-[3.8525rem] bg-white py-[3.125rem]  md:py-[6.25rem] border-[1px] border-[#E2E2E2] rounded-[2.5rem] -mt-[8rem] md:-mt-[13.5rem] mb-[7.5rem]">
+      <Container className="mx-5 md:mx-[3.8525rem]  bg-white py-[3.125rem]  md:py-[6.25rem] border-[1px] border-[#E2E2E2]  rounded-[2.5rem]  my-[7.5rem]">
         <TextContent
           className="text-center"
           headline="التوافق مع رؤيتك"
