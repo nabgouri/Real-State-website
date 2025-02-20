@@ -26,7 +26,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 60000); // Show splash screen for 2 seconds
+    }, 5000); // Show splash screen for 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
