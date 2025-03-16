@@ -18,7 +18,7 @@ export default function Card({ card }) {
       initial="initial"
       whileInView="whileInView"
     >
-      {card.logo && <img src={logo} alt="logo-test" />}
+      {card.logo && <img className="h-28 w-36" src={logo} alt="logo-test" />}
       {card.title && (
         <>
           <img src={img} alt="image" />
